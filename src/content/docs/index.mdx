@@ -1,40 +1,97 @@
 ---
-title: Welcome to Starlight
+title: Git & Github Workshop
 description: Get started building your docs site with Starlight.
 template: splash # Remove or comment out this line to display the site sidebar on this page.
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  tagline: Learn real-world Git and Github skills
   image:
-    file: ../../assets/houston.webp
+    file: ../../../public/ieee-cs.png
   actions:
-    - text: Example Guide
-      link: /guides/example/
+    - text: Course Notes
+      link: /notes/lecture-1/
       icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
-      icon: external
-      variant: minimal
+    # - text: Read the Starlight docs
+    #   link: https://starlight.astro.build
+    #   icon: external
+    #   variant: minimal
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## Next steps
+## What people are saying
+
+<div class="testimonial-wrapper">
+  {/* <div class="testimonial-grid-title">Loved by developers</div> */}
+  <div class="testimonial-grid">
+    <div class="testimonial">
+      <p class="testimonial-quote">
+        "Many courses lack the practical experience, Ghassen didn't. Great experience."
+      </p>
+      <div class="testimonial-author">
+        <img src="/avatars/ahmed.jpg" alt="" class="testimonial-avatar" />
+        <div>
+          <div class="testimonial-name">Ahmed Jemei</div>
+          <div class="testimonial-role">Computer Science student</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial">
+      <p class="testimonial-quote">
+        "The built-in search and dark mode are fantastic. Our users actually enjoy reading our docs now."
+      </p>
+      <div class="testimonial-author">
+        <img src="/avatars/ghassen.jpeg" alt="" class="testimonial-avatar" />
+        <div>
+          <div class="testimonial-name">John Smith</div>
+          <div class="testimonial-role">DX Lead, Example Co</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial">
+      <p class="testimonial-quote">
+        "Customizing the theme to match our brand took minutes, not days."
+      </p>
+      <div class="testimonial-author">
+        <img src="/avatars/ghassen.jpeg" alt="" class="testimonial-avatar" />
+        <div>
+          <div class="testimonial-name">Alex Rivera</div>
+          <div class="testimonial-role">Founder, Startup.io</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial">
+      <p class="testimonial-quote">
+        "The component library gives us the flexibility we need without fighting the framework."
+      </p>
+      <div class="testimonial-author">
+        <img src="/avatars/ghassen.jpeg" alt="" class="testimonial-avatar" />
+        <div>
+          <div class="testimonial-name">Sam Chen</div>
+          <div class="testimonial-role">Tech Writer, Docs Co</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+## What we cover
 
 <CardGrid stagger>
-	<Card title="Update content" icon="pencil">
+	<Card title="Update content" icon="seti:git">
 		Edit `src/content/docs/index.mdx` to see this page change.
 	</Card>
-	<Card title="Change page layout" icon="document">
+	<Card title="Change page layout" icon="github">
 		Delete `template: splash` in `src/content/docs/index.mdx` to display a
 		sidebar on this page.
 	</Card>
-	<Card title="Add new content" icon="add-document">
+	<Card title="Add new content" icon="code-branch">
 		Add Markdown or MDX files to `src/content/docs` to create new pages.
 	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
+	<Card title="Read the docs" icon="padlock">
 		Learn more in [the Starlight Docs](https://starlight.astro.build/).
 	</Card>
 </CardGrid>
+
+

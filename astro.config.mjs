@@ -6,14 +6,29 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			title: 'Git & GitHub',
+			  logo: {
+				light: './public/git-small.png',
+				dark: './public/git-small.png',
+				// replacesTitle: true,
+
+				},
+
+				customCss: ['./src/styles/custom.css'],
+
+			social: [
+				{ icon: 'github', label: 'GitHub', href: 'https://github.com/elfaidi-ghassen' }, 
+				{ icon: 'linkedin', label: 'LinkedIn', href: 'https://www.linkedin.com/in/ghassen-faidi/' }
+			],
 			sidebar: [
 				{
-					label: 'Guides',
+					label: 'Course Notes',
 					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
+						{ label: 'Before you start', slug: 'notes/setup' },
+						{ label: 'Lecture 1', slug: 'notes/lecture-1' },
+						{ label: 'Lecture 2', slug: 'notes/lecture-2', badge: 'upcoming' },
+						{ label: 'Lecture 3', slug: 'notes/lecture-3', badge: 'upcoming' },
+						{ label: 'Lecture 4', slug: 'notes/lecture-4', badge: 'upcoming' },
 					],
 				},
 				{
