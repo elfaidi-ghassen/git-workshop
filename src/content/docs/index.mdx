@@ -94,4 +94,8 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 	</Card>
 </CardGrid>
 
+<script is:inline>
+  localStorage.setItem('starlight-theme', 'dark');
+  document.documentElement.dataset.theme = 'dark';
+</script>
 
