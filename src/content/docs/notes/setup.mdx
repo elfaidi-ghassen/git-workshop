@@ -1,0 +1,50 @@
+---
+title: Before you start
+description: (content in progress)
+---
+
+import { Tabs, TabItem, Aside, Steps } from '@astrojs/starlight/components';
+
+Before we start we need to make sure Git is installed on your machine.
+
+<Aside type="tip">
+If you've used Git before and know it's already set up, you can skip ahead to [the first lecture](/notes/lecture-1/).
+</Aside>
+
+## Installing Git
+
+<Steps>
+
+1. **Install Git** using the instructions for your operating system below.
+
+2. **Verify the install** by running `git --version` again in a fresh terminal.
+</Steps>
+
+<Tabs>
+<TabItem label="Windows">
+Download the official installer from [git-scm.com/download/win](https://git-scm.com/download/win) and run it.
+
+After installing, open **Git Bash** (installed alongside Git) or PowerShell and run `git --version`.
+</TabItem>
+</Tabs>
+
+## Verifying your install
+
+Run:
+
+```
+git --version
+```
+
+You should see a version number. Then set your identity (**we will explain why this is important later**):
+
+```
+git config --global user.name "Your Name"
+git config --global user.email "you@example.com"
+```
+<Aside type="caution">
+Use the **same email** you'll use on GitHub. Otherwise your commits won't be linked to your account on GitHub. (If you don't have a GitHub account yet, you can [create one here](https://github.com/signup)).
+</Aside>
+
+## Use a code editor
+If you don't have a code editor yet, we recommend installing [Visual Studio Code](https://code.visualstudio.com/).

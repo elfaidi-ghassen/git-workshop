@@ -1,19 +1,15 @@
 ---
 title: Git & Github Workshop
 description: Get started building your docs site with Starlight.
-template: splash # Remove or comment out this line to display the site sidebar on this page.
+template: splash
 hero:
   tagline: Learn real-world Git and Github skills
   image:
     file: ../../../public/ieee-cs.png
   actions:
     - text: Course Notes
-      link: /notes/lecture-1/
+      link: /notes/setup/
       icon: right-arrow
-    # - text: Read the Starlight docs
-    #   link: https://starlight.astro.build
-    #   icon: external
-    #   variant: minimal
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
@@ -21,79 +17,66 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 ## What people are saying
 
 <div class="testimonial-wrapper">
-  {/* <div class="testimonial-grid-title">Loved by developers</div> */}
-  <div class="testimonial-grid">
-    <div class="testimonial">
-      <p class="testimonial-quote">
-  "Many courses lack the <em>practical experience</em>, Ghassen's didn't. Great experience." <i>(translated)</i>
-</p>
-      <div class="testimonial-author">
-        <img src="/avatars/ahmed.jpg" alt="" class="testimonial-avatar" />
-        <div>
-          <div class="testimonial-name">Ahmed Jemei</div>
-          <div class="testimonial-role">Computer Science student @ ISIMS</div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="testimonial">
-<p class="testimonial-quote">
-  "There is no perfect course, but this one did <em>really well</em>. I learned enough to <em>actually use</em> git and github in real projects." <i>(translated)</i>
-</p>
-      <div class="testimonial-author">
-        <img src="/avatars/jasser.jpeg" alt="" class="testimonial-avatar" />
-        <div>
-          <div class="testimonial-name">Jasser Felhi</div>
-          <div class="testimonial-role">Software Engineering student @ ISIMS</div>
-        </div>
-      </div>
-    </div>
-    
-    {/* 
-    <div class="testimonial">
-      <p class="testimonial-quote">
-        "Customizing the theme to match our brand took minutes, not days."
-      </p>
-      <div class="testimonial-author">
-        <img src="/avatars/ghassen.jpeg" alt="" class="testimonial-avatar" />
-        <div>
-          <div class="testimonial-name">Alex Rivera</div>
-          <div class="testimonial-role">Founder, Startup.io</div>
-        </div>
-      </div>
-    </div>
-    <div class="testimonial">
-      <p class="testimonial-quote">
-        "The component library gives us the flexibility we need without fighting the framework."
-      </p>
-      <div class="testimonial-author">
-        <img src="/avatars/ghassen.jpeg" alt="" class="testimonial-avatar" />
-        <div>
-          <div class="testimonial-name">Sam Chen</div>
-          <div class="testimonial-role">Tech Writer, Docs Co</div>
-        </div>
-      </div>
-    </div> */}
-  </div>
+<div class="testimonial-grid">
+<div class="testimonial">
+<p class="testimonial-quote">"Ghassen is a good teacher. Highly recommended for anyone who wants to learn Git and Github."</p>
+<div class="testimonial-author">
+<img src="/avatars/mohsen.jpeg" alt="" class="testimonial-avatar" />
+<div>
+<div class="testimonial-name">Mohsen Bellaj</div>
+<div class="testimonial-role">Software Engineering student</div>
 </div>
-
-
+</div>
+</div>
+<div class="testimonial">
+<p class="testimonial-quote">"Many courses lack the <em>practical experience</em>, Ghassen's didn't. Great experience."</p>
+<div class="testimonial-author">
+<img src="/avatars/ahmed.jpg" alt="" class="testimonial-avatar" />
+<div>
+<div class="testimonial-name">Ahmed Jemei</div>
+<div class="testimonial-role">Computer Science student</div>
+</div>
+</div>
+</div>
+<div class="testimonial">
+<p class="testimonial-quote">"There is no perfect course, but this one did <em>really well</em>. I learned enough to <em>actually use</em> git and github in real projects."</p>
+<div class="testimonial-author">
+<img src="/avatars/jasser.jpeg" alt="" class="testimonial-avatar" />
+<div>
+<div class="testimonial-name">Jasser Felhi</div>
+<div class="testimonial-role">Software Engineering student</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 ## What we cover
 
 <CardGrid stagger>
-	<Card title="Update content" icon="seti:git">
-		Edit `src/content/docs/index.mdx` to see this page change.
+	<Card title="1. Git Fundamentals" icon="seti:git">
+		How Git actually works under the hood: commits, staging, branches,
+		merging (fast-forward, three-way), handling conflicts, and
+		best practices for writing clean commits. Taught with a **unique and fun,
+		analogy-based approach** so the concepts stick.
 	</Card>
-	<Card title="Change page layout" icon="github">
-		Delete `template: splash` in `src/content/docs/index.mdx` to display a
-		sidebar on this page.
+
+	<Card title="2. GitHub Workflow" icon="github">
+		Setting up **SSH**, cloning, forking, contributing to open source,
+		remote tracking branches, pull / push, and pull requests. Plus the
+		most important part: a **practical day-to-day workflow** you can use
+		in real projects. We also cover Github projects and issues, and how to use them to manage your work.
 	</Card>
-	<Card title="Add new content" icon="code-branch">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
+
+	<Card title="3. Advanced Git" icon="code-branch">
+		Rebase, cherry-picking, fixing mistakes and using Bisect to find bugs.
+    Best practices drawn from real experience, plus one **final challenge:** how to resolve
+		**database migration conflicts** when working in a team.
 	</Card>
-	<Card title="Read the docs" icon="padlock">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
+
+	<Card title="4. Security in Git" icon="padlock">
+		Security concepts applied to Git: asymmetric cryptography explained
+		simply, **signed commits**, and why they matter for trust and
+		integrity in collaborative work.
 	</Card>
 </CardGrid>
-
